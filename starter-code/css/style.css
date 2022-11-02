@@ -14,21 +14,22 @@ html {
 
 body {
   font-family: PlusJakartaSans-Medium, sans-serif;
-  background-color: var(--color-white);
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
+  background-color: var(--color-white); }
 
-.header {
+header {
+  display: flex;
+  justify-content: center; }
+
+.navbar {
   width: 111rem;
   height: 10.518rem;
   display: flex;
   justify-content: space-between;
   align-items: center; }
-  .header__title {
+  .navbar__title {
     font-family: PlusJakartaSans-ExtraBold;
     font-size: 3.6rem; }
-  .header__button {
+  .navbar__button {
     font-family: PlusJakartaSans-Bold;
     font-size: 1.8rem;
     width: 16.7rem;
@@ -41,5 +42,8 @@ body {
     align-items: center;
     justify-content: center;
     cursor: pointer; }
-    .header__button:hover {
+    .navbar__button:hover {
       background-color: var(--color-blue-grey); }
+
+main {
+  width: 111rem; }
