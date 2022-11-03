@@ -1,0 +1,257 @@
+@import url('plus-jakarta-sans.css');
+
+:root {
+    --color-white: #FFFFFF;
+    --color-dark-blue: #13183F;
+    --color-blue-grey: #666CA3;
+    --color-grey: #83869A;
+    --color-pink: #F74780;
+
+    --gradient-orange-pink: linear-gradient(180deg, #FF6F48 0.04%, #F02AA6 100%);
+    --gradient-white: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 50%, #F0F1FF 100%);
+    --gradient-blue-pink: linear-gradient(180deg, #4851FF 0%, #F02AA6 99.92%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: PlusJakartaSans-Medium, sans-serif;
+    background-color: var(--color-white);
+    color: var(--color-grey);
+}
+
+// Typhography
+
+h1 {
+    font-family: PlusJakartaSans-ExtraBold;
+    font-size: 3.6rem;
+}
+
+h2 {
+    font-family: PlusJakartaSans-ExtraBold;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+h3 {
+    font-family: PlusJakartaSans-ExtraBold;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+p {
+    font-family: PlusJakartaSans-Medium;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+////////////////
+
+footer {
+    background-color: var(--color-dark-blue);
+
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    width: 111rem;
+    height: 10.518rem;
+    z-index: 999;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & h1 {
+        color: var(--color-dark-blue);
+    }
+
+    &__button {
+        width: 16.7rem;
+        height: 5.6rem;
+        background-color: var(--color-dark-blue);
+
+        &:hover {
+            background-color: var(--color-blue-grey);
+        }
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--gradient-white);
+}
+
+.presentation-container {
+    width: 111rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.presentation {
+    width: 50%;
+    height: 359px;
+
+    &__title {
+        font-family: PlusJakartaSans-ExtraBold;
+        font-size: 56px;
+        line-height: 70.56px;
+        color: var(--color-dark-blue);
+    }
+
+    &__text {
+        width: 43rem;
+        margin: 4.6rem 0;
+    }
+}
+
+.main-photo {
+    width: 50%;
+    height: 67rem;
+    position: relative;
+
+    &__picture {
+        bottom: 0;
+
+        & img {
+            margin-top: -24.4rem;
+        }
+    }
+}
+
+.btn {
+    font-family: PlusJakartaSans-Bold;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: var(--color-white);
+    padding: 1rem 3rem;
+    border-radius: 2.8rem;
+    border: none;
+    cursor: pointer;
+
+    &--dark {
+        background-color: var(--color-dark-blue);
+
+        &:hover {
+            background-color: var(--color-blue-grey);
+        }
+    }
+
+    &--primary {
+        background: var(--gradient-orange-pink);
+
+        &:hover {
+            opacity: .5;
+        }
+    }
+
+    &--footer {
+        background: var(--gradient-blue-pink);
+
+        &:hover {
+            opacity: .5;
+        }
+    }
+}
+
+.cards-container {
+    width: 111rem;
+    display: grid;
+    margin: 140px 0;
+ 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 322px 322px;
+ 
+    grid-row-gap: 88px;
+    grid-column-gap: 30px;
+}
+
+.card {
+    padding: 64px 32px 32px 32px;
+    border-radius: 15px;
+    position: relative;
+
+    &--title {
+        background: var(--gradient-orange-pink);
+
+        & h2 {
+            color: var(--color-white);
+        }
+    }
+
+    &--text {
+        background-color: var(--color-white);
+
+        & h3 {
+            color: var(--color-dark-blue);
+        }
+
+        & p {
+            margin-top: 24px;
+        }
+    }
+
+    &__circle {
+        position: absolute;
+        background: var(--gradient-orange-pink);
+        width: 56px;
+        height: 56px;
+        border-radius: 28px;
+        top: -28px;
+    }
+
+    & a {
+        font-family: PlusJakartaSans-Bold;
+        font-size: 18px;
+        color: var(--color-pink);
+        text-decoration: none;
+
+        position: absolute;
+        bottom: 40px;
+
+        &:hover {
+            opacity: .5;
+        }
+    }
+}
+
+.footer {
+    width: 111rem;
+    height: 10.518rem;
+    z-index: 999;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & h1 {
+        color: var(--color-white);
+    }
+
+    &__button {
+        width: 16.7rem;
+        height: 5.6rem;
+        background-color: var(--color-dark-blue);
+
+        &:hover {
+            background-color: var(--color-blue-grey);
+        }
+    }
+}
