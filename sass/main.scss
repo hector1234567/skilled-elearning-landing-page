@@ -287,7 +287,7 @@ main {
     }
 
     .cards-container {
-        width: 68.98rem;
+        width: 689.8px;
         margin: 14rem 0;
      
         grid-template-columns: 1fr 1fr;
@@ -303,4 +303,55 @@ main {
         }
     }
 
+}
+
+@media (max-width: 764px) { 
+    .presentation-container {
+        flex-direction: column;
+        max-width: 343px;
+        align-items: center;
+    }
+
+    .presentation {
+        width: 100%;
+        height: 32.9rem;
+    
+        &__title {
+            font-size: 40px;
+            line-height: 50.4px;
+        }
+    
+        &__text {
+            width: 100%;
+            margin: 4.6rem 0;
+        }
+    }
+
+    .navbar,
+    .footer {
+        max-width: 100%;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .cards-container {
+        max-width: 343px;
+        margin: 0 16px 80px 16px;
+
+        grid-row-gap: 4.8rem;
+     
+        grid-template-columns: 1fr;
+        grid-template-rows: 22.2rem 32.2rem 32.2rem 32.2rem 32.2rem 32.2rem;
+    }
+
+    .main-photo {
+        height: 43rem;
+
+        &__picture {
+            & img {
+                margin-top: 1.6rem;
+                margin-left: -130px;
+            }
+        }
+    }
 }
