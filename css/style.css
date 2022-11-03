@@ -207,6 +207,8 @@ main {
       margin-top: -20.4rem; } }
 
 @media (max-width: 764px) {
+  header {
+    margin-bottom: 20px; }
   .presentation-container {
     flex-direction: column;
     max-width: 343px;
